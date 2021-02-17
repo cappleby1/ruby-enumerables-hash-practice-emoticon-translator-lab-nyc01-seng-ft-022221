@@ -25,13 +25,14 @@ def load_library(location)
   return emojis
 end
 
-def get_japanese_emoticon(eng)
+def get_japanese_emoticon(path, emoji)
   # code goes here
   
-  emojis.each do |key, symbols|
-    if symbols[0] == eng
+  emojis = load_library(path)
+  
+  emojis.each do |key, langs|
+    if langs[:english] == emoji
       return key
-    end
   end
       
   
