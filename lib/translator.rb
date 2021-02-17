@@ -52,12 +52,9 @@ def get_english_meaning(path,)
   end
       
   return "Sorry, that emoticon was not found"
-  
 end
 
 
-location = './lib/emoticons.yml'
-data = load_library(location)
-
-
+#location = './lib/emoticons.yml'
+#data = load_library(location)
 #binding.pry
