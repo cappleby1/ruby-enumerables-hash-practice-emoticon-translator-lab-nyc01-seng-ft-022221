@@ -3,12 +3,25 @@
 require "yaml"
 require "pry"
 
+print "This sucks1"
 
 def load_library(location)
   # code goes here
   
-  emojis = YAML.load_file(location)
-  
+  data = YAML.load_file(location)
+
+  emojis = {}
+  puts "This sucks"
+
+  binding.binding.pry
+
+  data.each do |key, values|
+
+    hash0 = {"English": => values[0], "Japanese": => values[1]}
+
+    binding.pry
+
+    emojis[:key] = hash0
   return emojis
 end
 
@@ -36,8 +49,8 @@ def get_english_meaning(jap)
 end
 
 
-#location = './lib/emoticons.yml'
-#data = load_library(location)
+location = './lib/emoticons.yml'
+data = load_library(location)
 
 
 #binding.pry
