@@ -17,7 +17,7 @@ def load_library(location)
 
   data.each do |key, values|
 
-    hash0 = {"English": => values[0], "Japanese": => values[1]}
+    hash0 = {"English" => values[0], "Japanese" => values[1]}
 
     binding.pry
 
