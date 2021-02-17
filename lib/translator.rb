@@ -13,7 +13,7 @@ def load_library(location)
   emojis = {}
   puts "This sucks"
 
-  binding.binding.pry
+  binding.pry
 
   data.each do |key, values|
 
