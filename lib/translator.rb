@@ -3,7 +3,7 @@
 require "yaml"
 require "pry"
 
-print "This sucks1"
+
 
 def load_library(location)
   # code goes here
@@ -11,15 +11,13 @@ def load_library(location)
   data = YAML.load_file(location)
 
   emojis = {}
-  puts "This sucks"
 
-  binding.pry
 
   data.each do |key, values|
 
     hash0 = {"English" => values[0], "Japanese" => values[1]}
 
-    binding.pry
+    #binding.pry
 
     emojis[key] = hash0
   end
