@@ -36,11 +36,11 @@ def get_japanese_emoticon(path, emoji)
     end
   end
       
-  return "I apologize, we were unable to find #{emoji}"
+  return "Sorry, that emoticon was not found"
   
 end
 
-def get_english_meaning(jap)
+def get_english_meaning(path, emoji)
   # code goes here
   
   emojis.each do |key, value|
