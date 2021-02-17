@@ -15,14 +15,12 @@ def load_library(location)
 
   data.each do |key, values|
 
-    hash0 = {"English" => values[0], "Japanese" => values[1]}
+    hash0 = {:english => values[0], :japanese => values[1]}
 
     #binding.pry
 
     emojis[key] = hash0
   end
-  
-  puts emojis
   
   return emojis
 end
