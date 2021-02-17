@@ -22,6 +22,8 @@ def load_library(location)
     binding.pry
 
     emojis[:key] = hash0
+  end
+  
   return emojis
 end
 
