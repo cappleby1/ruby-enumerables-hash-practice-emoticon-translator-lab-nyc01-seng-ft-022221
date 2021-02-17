@@ -32,10 +32,10 @@ def get_japanese_emoticon(path, emoji)
   
   emojis.each do |key, langs|
     if langs[:english] == emoji
-      return key
+      return langs[:japanese]
   end
       
-  
+  return "I apologize, we were unable to find #{emoji}"
   
 end
 
