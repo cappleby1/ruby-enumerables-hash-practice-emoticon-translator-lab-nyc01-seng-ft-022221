@@ -22,6 +22,8 @@ def load_library(location)
     emojis[key] = hash0
   end
   
+  puts emojis
+  
   return emojis
 end
 
